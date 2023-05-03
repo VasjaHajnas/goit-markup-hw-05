@@ -141,7 +141,7 @@ a {
   color: #404bbf;
 }
 
-.header-link-underline:after {
+.header-link-studio:after {
   content: "";
   left: 0;
   bottom: 0;
@@ -155,6 +155,19 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header-link-portfolio:after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  bottom: -1px;
+  border-radius: 2px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .header-link:hover,
 .header-link:focus {
   color: #404bbf;
@@ -653,7 +666,7 @@ a {
   height: 100%;
   overflow: auto;
   transform: translate(0, 100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 16px;
   line-height: 1.5;
   color: var(--main-portfolio-background-color);
